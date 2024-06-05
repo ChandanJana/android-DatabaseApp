@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "788020639378",
+    "project_id": "emc-scdemoapp-mindteck-uat1-t",
+    "storage_bucket": "emc-scdemoapp-mindteck-uat1-t.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788020639378:android:1572cad47e4ab6c457d84b",
+        "android_client_info": {
+          "package_name": "com.zebra.showcaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788020639378-m6jo2p6rqim4h80purkcsbdqkoo2okke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt-NdmuWKQUK0K5ICXZm1sYanBspbnP-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788020639378-m6jo2p6rqim4h80purkcsbdqkoo2okke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

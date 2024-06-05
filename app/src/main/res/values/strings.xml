@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Zebra Showcase</string>
+    <string name="zebra_showcase">Zebra Showcase</string>
+    <string name="some_info_about_the_app">Some info about the app</string>
+    <string name="cancel">Cancel</string>
+    <string name="agree">Agree</string>
+    <string name="new_app_install">New App Install</string>
+    <string name="beta_app">Beta App</string>
+    <string name="available_soon">Available soon</string>
+    <string name="end_user_license_agreement">End User License Agreement</string>
+    <string name="software_restricted">(Software Restricted)</string>
+    <string name="zebra">ZEBRA</string>
+    <string name="dot">.................</string>
+    <string name="download">Download</string>
+    <string name="open">Open</string>
+    <string name="installing">Installing</string>
+    <string name="setting">Setting</string>
+    <string name="info">Info</string>
+    <string name="no_internet">Internet not available, Cross check your internet connectivity and try again!</string>
+    <string name="ok">OK</string>
+    <string name="share_file_with">Share file with</string>
+    <string name="test">Test</string>
+    <string name="licence">Test</string>
+    <string name="no_internet_title">No internet</string>
+    <string name="download_unsuccessful_title">Download Unsuccessful</string>
+    <string name="overview">Explore the latest features and solutions for Zebra Android<sup><font size="8">TM</font></sup> devices with the Zebra Showcase app, built on Zebra Enterprise Browser.</string>
+    <string name="rsa">RSA</string>
+</resources>

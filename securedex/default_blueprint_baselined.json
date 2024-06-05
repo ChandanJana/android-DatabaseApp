@@ -1,0 +1,100 @@
+{
+ "targets": {
+	"input": "app/build/outputs/apk/release/com.zebra.showcaseapp.apk",
+    "output": "output/"
+
+  },
+  "globalConfiguration": {
+    "keepSignatures": "keepSignatures.txt",
+	"charsetType":"ascii",
+    "verbosityLevel": {
+      "global": 1
+    },
+    "threatAnalytics": {
+       "disable": true,
+      "endpointURL": "auto",
+      "applicationToken": "auto",
+      "heartbeat" : {
+        "interval" : 60,
+        "initialDelay" : 10
+      }
+    }
+  },
+  "guardConfiguration": {
+    "controlFlowFlattening": {
+	"disable" : true,
+      "safeMode": false,
+       "exclude": [
+        {
+          "type": "class",
+
+          "name": "android.*"
+        },
+        {
+          "type": "class",
+          "name": "androidx.*"
+        }]
+
+    },
+	"renaming": {
+"disable": false
+
+
+},
+    "stringEncryption": {
+     "disable": false
+    },
+	       "debugInfoStrip": {
+		   "disable": true,
+            "exclude": [
+                {
+                    "name": "android.*",
+                    "type": "class"
+                },
+                {
+                    "name": "androidx.*",
+                    "type": "class"
+                }
+            ]
+        },
+        "operatorRemoval": {
+            "disable": false,
+            "replaceAddOperators": true,
+            "replaceAndOperators": false,
+            "replaceOrOperators": false,
+            "replaceXorOperators": false
+        },
+
+    "resourceEncryption": {
+      "disable": false,
+      "debug": false,
+      "files": [
+    
+
+      ]
+    },
+
+    "resourceVerification": [
+      {
+        "name": "Resource Verification Guard",
+        "invocationLocations": [
+          {
+            "type": "auto"
+          }
+        ],
+        "tamperAction": {
+          "type": "doNothing"
+        },
+        "nonTamperAction": {
+          "type": "doNothing"
+        },
+        "files": [
+          "resources.arsc",
+          "AndroidManifest.xml"
+        ]
+      }
+    ]
+
+
+  }
+}

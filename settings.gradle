@@ -1,0 +1,43 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+            credentials {
+                username = System.getenv('artifactory_user')
+                password = System.getenv('artifactory_password')
+            }
+            url = "https://artifactory-apac.zebra.com:443/artifactory/virtual-maven/"
+        }
+        /*maven {
+            url = 'https://github.com/symbol-esw/maven-repo/raw/master'
+        }*/
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+            credentials {
+                username = System.getenv('artifactory_user')
+                password = System.getenv('artifactory_password')
+            }
+            url = "https://artifactory-apac.zebra.com:443/artifactory/virtual-maven/"
+        }
+    }
+}
+rootProject.name = "Zebra Showcase"
+include ':app'
